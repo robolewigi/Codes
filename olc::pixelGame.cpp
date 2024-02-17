@@ -22,11 +22,11 @@ float degrees(float degrees)
 
  //Shape
 
- struct start : public olc::PixelGameEngine
+ struct shape : public olc::PixelGameEngine
  {
  
  
- 	start()
+ 	shape()
  	{
  		sAppName = "test";
  		
@@ -98,7 +98,7 @@ float degrees(float degrees)
 
  // topDown
 
- struct start : public olc::PixelGameEngine
+ struct topDown : public olc::PixelGameEngine
  {
  	
  	struct vec3{
@@ -235,7 +235,7 @@ float degrees(float degrees)
  		olc::RED);
  	}
  
- 	start()
+ 	topDown()
  	{
  		sAppName = "test";
  	}
@@ -273,7 +273,7 @@ float degrees(float degrees)
  
  };
 
- start
+// start
 
  struct start : public olc::PixelGameEngine
  {
@@ -297,11 +297,11 @@ float degrees(float degrees)
 
 // mode7
 
- class OneLoneCoder_FakeMode7 : public olc::PixelGameEngine
+ class mode7 : public olc::PixelGameEngine
  {
   	 
  public:
- 	OneLoneCoder_FakeMode7()
+ 	mode7()
  	{
  		sAppName = "Pseudo 3D Planes";
  	}
@@ -443,7 +443,7 @@ float degrees(float degrees)
 
 // race
 
- struct start : public olc::PixelGameEngine
+ struct race : public olc::PixelGameEngine
  {
  	int segL = 200;  segment length
  	
@@ -488,7 +488,7 @@ float degrees(float degrees)
     int H = 2000;
     int hill=-2000;
  
- 	start()
+ 	race()
  	{
  		sAppName = "test";
  	}
@@ -575,7 +575,7 @@ float degrees(float degrees)
 
 // picture
 
- struct start : public olc::PixelGameEngine
+ struct picture : public olc::PixelGameEngine
  {
  	float panX=width/10, panY=height/5, scale=.5, rotate=0.0f;
  		int currTileX,currTileY;
@@ -589,7 +589,7 @@ float degrees(float degrees)
  	};
  	std::vector<tile> tiles;
  
- 	start()
+ 	picture()
  	{
  		sAppName = "test";
  	}
@@ -652,7 +652,7 @@ float degrees(float degrees)
 
 // cards
 
-struct start : public olc::PixelGameEngine
+struct cards : public olc::PixelGameEngine
 {
 	olc::Pixel background = (11,66,33);
 
@@ -665,7 +665,7 @@ struct start : public olc::PixelGameEngine
 	DrawRect(x,y,mapSize,mapSize,background);
 	}
 
-	start()
+	cards()
 	{
 		sAppName = "puzzle";
 	}
